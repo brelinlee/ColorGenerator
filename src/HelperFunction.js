@@ -15,3 +15,11 @@ export function hexToRgb(hex) {
       b: parseInt(result[3], 16)
   } : null;
 }
+
+export function GenerateRandomHexArr(){
+  let [r0,g0,b0] = GenerateRandomRGBArr();
+  let [r1,g1,b1] = GenerateRandomRGBArr();
+  let hexColor0 = rgb2hex(r0,g0,b0);
+  let hexColor1 = rgb2hex(r1,g1,b1);
+  return [hexColor0, hexColor1];
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import spiral from './spiral.svg';
 import './App.css';
 import ColorBox from './ColorBox';
 
@@ -9,8 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Find You Color</h1>
+          <img src={spiral} className="App-logo" alt="logo" />
+          <h1 className="App-title">Find You Color Combo</h1>
         </header>
         <ColorBox num ={16}/>
       </div>
